@@ -63,3 +63,21 @@ h1 {
     width: 150px;
     height: 150px;
 }
+
+.pokemon-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.pokemon-list-item {
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.pokemon-list-item:hover {
+    background-color: #f0f0f0;
+}
