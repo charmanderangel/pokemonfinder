@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    background-image: url('images/legendary-pokemon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#pokemon-search {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#search-btn {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #0056b3;
+}
+
+.pokemon-info {
+    margin-top: 20px;
+}
+
+.pokemon-info h2 {
+    text-transform: capitalize;
+}
+
+.pokemon-info img {
+    width: 150px;
+    height: 150px;
+}
+
+.pokemon-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.pokemon-list-item {
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.pokemon-list-item:hover {
+    background-color: #f0f0f0;
+}
