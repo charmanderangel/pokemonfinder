@@ -116,3 +116,226 @@ h1 {
     font-size: 24px;
     margin: 0 10px;
 }
+
+#card-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffcb05;
+    color: #3b4cca;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+#card-btn:hover {
+    background-color: #c7a008;
+}
+
+#pokemon-card-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.card-modal {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.card-modal img {
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #333;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#battle-select-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#battle-select-btn:hover {
+    background-color: #d32f2f;
+}
+
+#battle-zone {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+}
+
+.fighters-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.fighter {
+    text-align: center;
+    position: relative;
+}
+
+.fighter img {
+    width: 100px;
+    height: 100px;
+}
+
+.remove-btn {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#clear-battle-btn, #start-battle-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#clear-battle-btn {
+    background-color: #757575;
+    color: white;
+}
+
+#start-battle-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#battle-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/battle-background.png'); /* Add a battle background image to your images folder */
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.battle-pokemon {
+    text-align: center;
+}
+
+.battle-pokemon img {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.battle-pokemon.fainted img {
+    transform: rotate(-90deg) translateY(50px);
+    opacity: 0.5;
+}
+
+.pokemon-1 {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+.pokemon-2 {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.hp-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #333;
+}
+
+.hp {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+#battle-log {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: scroll;
+    font-family: monospace;
+}
+
+#back-to-main {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
